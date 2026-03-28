@@ -1,0 +1,23 @@
+chore(review): add code review findings 070-083 from /ce:review on feat/video-intelligence-panel
+
+P1:
+- 070: market-suggestion service layer extraction (route always returns 501)
+- 071: POST /api/markets videoAgeHours floor guard bypass via client-supplied value
+
+P2:
+- 072: admin lifecycle API routes missing (publish/cancel/resolve/list-drafts)
+- 073: channelId not validated against YOUTUBE_CHANNEL_ID_RE before URL interpolation
+- 074: thumbnail URL domain validation missing from POST /api/markets
+- 075: non-atomic dual DB inserts in POST /api/markets (orphaned markets on crash)
+- 076: extractVideoId + YOUTUBE_API_BASE + YT_TIMEOUT_MS duplicated across 3 files
+- 077: calibrated probability range (25-45%) hardcoded in 3 places
+- 078: video-stats route uses cache:no-store, burns YouTube quota on every call
+
+P3:
+- 079: verifyCronAuth length pre-check minor timing oracle
+- 080: snapToPreset exported and tested but never called (dead code)
+- 081: ResolutionHours type extraction (24|48|72 literal union duplicated 4+ places)
+- 082: resolutionHours allowlist check runs after computeExpectedOutcome in createMarket
+- 083: AGENTS.md draft publish path misleading; GET /api/markets/[id] undocumented
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>

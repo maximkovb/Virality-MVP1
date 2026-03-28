@@ -1,0 +1,20 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/admin/markets/new/page": "/admin/markets/new",
+  "/admin/markets/page": "/admin/markets",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/api/cron/poll-youtube/route": "/api/cron/poll-youtube",
+  "/api/cron/resolve-markets/route": "/api/cron/resolve-markets",
+  "/api/leaderboard/route": "/api/leaderboard",
+  "/api/markets/[id]/route": "/api/markets/[id]",
+  "/api/markets/route": "/api/markets",
+  "/api/portfolio/route": "/api/portfolio",
+  "/auth/signin/page": "/auth/signin",
+  "/auth/signup/page": "/auth/signup",
+  "/favicon.ico/route": "/favicon.ico",
+  "/leaderboard/page": "/leaderboard",
+  "/markets/[id]/page": "/markets/[id]",
+  "/page": "/",
+  "/portfolio/page": "/portfolio"
+}
